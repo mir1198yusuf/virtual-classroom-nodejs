@@ -12,6 +12,10 @@
     "jwt-simple": "^0.5.6",
     "uuid": "^8.3.2"
   },
+  "engines": {
+    "node": "16.x",
+    "yarn": "1.x"
+  },
   "scripts": {
     "dev": "nodemon ./index.js",
     "start": "node ./index.js"

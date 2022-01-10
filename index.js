@@ -91,7 +91,6 @@ app.post("/login", async (req, res) => {
     res.status(200).json({ jwt: token });
     return;
   } catch (error) {
-    console.log(error);
     res.status(500).json({ error: "Internal error" });
     return;
   }
