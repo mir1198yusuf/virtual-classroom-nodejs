@@ -609,4 +609,6 @@ app.get("/assignments", checkJwt, async (req, res) => {
   }
 });
 
-app.listen(port, () => console.log(`Server running on ${port}.`));
+app.listen(process.env.PORT || port, () =>
+  console.log(`Server running on ${port}.`)
+);
